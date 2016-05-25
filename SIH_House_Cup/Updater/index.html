@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>SIH House Cup 2015-16 updater</title>
+	</HEAD>
+	<BODY>
+		<h2 style="margin-top: 10px; margin-bottom: 10px;">SIH house cup updater page</h2>
+		<br>
+		
+		<div class="FromWeb">
+			<script type="text/javascript">
+				function numbers(){
+					var userInput = '5';
+					document.getElementById('EH1pt').innerHTML = userInput;
+				}
+			</script>
+			<body onload="numbers()">
+			<p>Welcome to the site <b id='EH1pt'></b`></p> 
+			<!--<input type='text' id='userInput' value=5 />-->
+			<input type='button' onclick='changeText2()' value='Change Text'/>
+			<br><br>
+		</div>
+		
+		<div class="table">
+		</div>
+		
+		<div class="Form">
+			<form action="upload8.php" method="post" enctype="multipart/form-data">
+				<label for="file">Choose a file:</label>
+				<input type="file" name="file_upload" multiple="multiple"/>
+				<input type="submit" value="Upload">
+			</form>
+		</div>
+		
+		<div class="links">
+			<br><br>
+			<a href="../index.html">Click here to go back to the main page</a>
+			<br><br>
+		</div>
+		
+		<div class="Footer">
+			<br>
+		</div>
+	</BODY>
+</HTML>

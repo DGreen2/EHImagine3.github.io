@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+#AuthName "RIT"
+#AuthType shibboleth
+#ShibRequireSession On
+## See: https://webman.rit.edu/guide/auth.php
+###RIT_new-web_changed_to_shibboleth###AuthLDAPUrl ldaps://ldap.rit.edu/ou=people,dc=rit,dc=edu?uid?sub
+## See: https://webman.rit.edu/guide/auth.php
+###RIT_new-web_changed_to_shibboleth###AuthzLDAPAuthoritative off
+
+AuthType shibboleth
+ShibRequireSession On
+SSLRequireSSL
+require valid-user 

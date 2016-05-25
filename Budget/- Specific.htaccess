@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+AuthType shibboleth
+ShibRequireSession On
+SSLRequireSSL
+require user djg8885 
+require user lgh2257 ans4658 rxd3031 jxp9521
+require user amc2794 jmb8314 mrm3101 mal2458
+require user jmb8314 sw2767 vcd5518 nxl4800 kab3322 mal2458
